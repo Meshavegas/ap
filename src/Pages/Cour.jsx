@@ -6,6 +6,9 @@ import { Rating } from "primereact/rating";
 import { TabView, TabPanel } from "primereact/tabview";
 import { useParams } from "react-router-dom";
 import Navbar from "../Compoment/Navbar";
+import DashBord from "../Compoment/DashBord";
+import "../styles/cour.scss";
+import TopBar from "../Compoment/TopBar";
 const Cour = () => {
   const courses = [
     {
@@ -107,9 +110,11 @@ const Cour = () => {
   const { courseId } = useParams();
   const course = courses.find((c) => c.id == courseId);
   return (
-    <div>
-      <Navbar />
-      <div className="card m-4">
+    <div className="flex">
+      <DashBord />
+      <div className="card m-4 homeContainer">
+        <TopBar />
+
         <h1>{course.name}</h1>
         <h2>Leçons</h2>
         <div className="lesson-list card-container">

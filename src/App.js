@@ -30,14 +30,17 @@ const App = () => {
       {" "}
       <BrowserRouter>
         <Routes>
-          <Route path="/courses/:courseId" element={<Cour />} />
-
-          <Route path="/" element={<Acceuil />} />
-          <Route path="/courses" element={<Cours />} />
-          <Route path="/login" element={<SignInPage />} />
-          <Route path="/singin" element={<SignUpPage />} />
-          <Route path="/schools" element={<SchoolDetailsHeader />} />
-          <Route path="/etablisement" element={<Etablissements />} />
+          <Route path="/">
+            <Route index element={<Acceuil />} />
+            <Route path="courses">
+              <Route index element={<Cours />} />
+              <Route path=":courseId" element={<Cour />} />
+            </Route>
+            <Route path="/login" element={<SignInPage />} />
+            <Route path="/singin" element={<SignUpPage />} />
+            <Route path="/schools" element={<SchoolDetailsHeader />} />
+            <Route path="/etablisement" element={<Etablissements />} />
+          </Route>
         </Routes>
       </BrowserRouter>
     </div>
