@@ -1,6 +1,6 @@
 import React from "react";
 import { Container, Grid, Paper, Typography, Button } from "@material-ui/core";
-import "./styles.css";
+import "../styles/index.css";
 import logo_iai from "../assets/iai.jpeg";
 
 import { TabView, TabPanel } from "primereact/tabview";

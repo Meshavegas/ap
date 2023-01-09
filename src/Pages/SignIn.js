@@ -9,7 +9,7 @@ import {
   Card,
   Link,
 } from "@material-ui/core";
-import "./styles.css";
+import "../styles/index.css";
 
 import Navbar from "../Compoment/Navbar";
 
@@ -69,7 +69,7 @@ const SignInPage = () => {
             <Card elevation={2} fullWidth>
               <Link>Connect with google</Link>
             </Card>
-            <Link to="/singin" style={{TextDecoder: "none"}}>
+            <Link to="/singin" style={{ TextDecoder: "none" }}>
               <h5>Crée un Compte</h5>
             </Link>
 

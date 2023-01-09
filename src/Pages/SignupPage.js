@@ -9,7 +9,7 @@ import {
   Card,
   Link,
 } from "@material-ui/core";
-import "./styles.css";
+import "../styles/index.css";
 import Navbar from "../Compoment/Navbar";
 
 //  gestion du post en cours
