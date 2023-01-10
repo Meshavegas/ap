@@ -12,7 +12,7 @@ import {
 export default function Navbar() {
   const [open, setOpen] = useState(false);
   return (
-    <nav className="bg-white max-w-full px-10 mt-5 md:mt-0">
+    <nav className="bg-white max-w-full px-10 mt-5 md:mt-0 xl:mt-5 lg:mt-5">
       <div className="flex items-center font-medium justify-between md:px-10">
         <div className="z-50 p-1 md:w-auto w-full flex justify-between">
           <img src={logo} alt="logo" className="md:curor-pointer h-10" />
@@ -28,11 +28,18 @@ export default function Navbar() {
             <li>Home</li>
           </Link>
           <Link to="/etablisement">
-            <li>Etablissements</li>
+            <li>About Us</li>
+          </Link>
+          <Link to="/etablisement">
+            <li>Contacts</li>
+          </Link>
+          <Link to="/etablisement">
+            <li>Visiter l'etablissement</li>
           </Link>
         </ul>
-        <div className="md:block hidden">
+        <div className="md:block hidden md:flex lg:flex xl:flex xl:items-center ">
           <Button />
+          <div className='border-blue-500 border text-blue-500 px-6 py-2 w-auto rounded-full flex ml-3'>Inscription</div>
         </div>
         <ul
           className={`
@@ -48,6 +55,7 @@ export default function Navbar() {
           <Navlink />
           <div className="py-5 flex">
             <Button />
+            <div className='border-blue-500 border text-blue-500 px-6 py-2 w-auto rounded-full flex ml-3'>Inscription</div>
           </div>
         </ul>
       </div>

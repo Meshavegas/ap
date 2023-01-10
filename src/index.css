@@ -15,3 +15,13 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+.frame{
+  height: 100vh;
+  z-index: 10;
+
+}
+
+.frame iframe{
+  height: 100%;
+}
