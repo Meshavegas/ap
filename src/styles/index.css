@@ -121,6 +121,8 @@ code {
 
 .google_list i {
   font-size: 25px;
+  justify-content: center;
+
 }
 
 .link {
@@ -128,5 +130,6 @@ code {
   padding: 10px;
   border-radius: 25px;
   border: solid 1px black;
+  text-align: center;
 
 }
