@@ -70,7 +70,7 @@ export default function Corps() {
             </section>
         </section>
         <section className='px-10 py-10 mt-5 xl:px-20'>
-            <h1 className='text-2xl font-semibold max-w-dm py-5 text-center'>
+            <h1 className='text-2xl font-semibold max-w-dm py-5 text-center' id='about'>
                     Qui sommes nous ?
                     {/* syst-me d'authentification */}
             </h1>
@@ -90,7 +90,7 @@ export default function Corps() {
             </div>
         </section>
         <section className='my-5 xl:px-20 xl:mb-20 '>
-            <h1 className='text-2xl mb-10 font-semibold max-w-dm py-5 text-center'>
+            <h1 className='text-2xl mb-10 font-semibold max-w-dm py-5 text-center' id='school'>
                     Etablissement
                     {/* syst-me d'authentification */}
             </h1>
@@ -101,7 +101,7 @@ export default function Corps() {
             </div>
         </section>
         <section className='px-10 py-20 mt-5 bg-gray-100'>
-            <h1 className='text-2xl font-semibold max-w-dm py-5 mb-10 text-center'>
+            <h1 className='text-2xl font-semibold max-w-dm py-5 mb-10 text-center' id='contact'>
                     Contacts
                     {/* syst-me d'authentification */}
             </h1>
