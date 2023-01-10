@@ -14,12 +14,16 @@ const Etablissements = () => {
     <div>
       <Navbar />
       <div className="frame">
-        <div className="circular">
-          {
-            !isLoaded && <CircularProgress className="spinner_circle" size={100} />
-          }
 
-        </div>
+        {
+          !isLoaded && (
+            <div className="circular">
+              <CircularProgress className="spinner_circle" size={100} />
+            </div>
+          )
+        }
+
+
         <iframe
           id="my-iframe"
           width="100%"
