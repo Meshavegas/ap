@@ -1,6 +1,6 @@
 import React from 'react'
 import { useState } from 'react'
-import { TextField, Button } from '@material-ui/core'
+import { Button } from '@material-ui/core'
 
 function CreateClass() {
     const [PostData, setPostData] = useState({
@@ -15,14 +15,14 @@ function CreateClass() {
                 <div className='label'> Nom</div>
                 <input
                     className='text_input'
-                    required placeholder='Name'
+                    required placeholder='Nom de la salle virtuelle'
                     value={PostData.name}
                     onChange={(e) => { setPostData({ ...PostData, name: e.target.value }) }}
                 />
                 <div className='label'> Description</div>
                 <textarea
                     className='text_input2 '
-                    placeholder="SCHOOL DESCRIPTION ..."
+                    placeholder="Brève description de la salle virtuelle...."
                     required rows={5}
                     value={PostData.info}
                     onChange={(e) => { setPostData({ ...PostData, info: e.target.value }) }}
