@@ -9,7 +9,7 @@ import {
   Card,
   Link,
 } from "@material-ui/core";
-import "./styles.css";
+import "../styles/index.css";
 import Navbar from "../Compoment/Navbar";
 
 //  gestion du post en cours
@@ -27,10 +27,7 @@ const SignUpPage = () => {
     e.preventDefault();
   };
 
-  const clear = () => {
-    // setCurrentId(null);
-    setPostData({});
-  };
+
   return (
     <div>
       <Navbar />
@@ -99,9 +96,9 @@ const SignUpPage = () => {
               }}
             />
 
-            <Card elevation={2} fullWidth>
-              <Link>Connect with google</Link>
-            </Card>
+            <div className="google_list">
+              <Link className="link"> <i className="pi pi-google"></i> Connect with google</Link>
+            </div>
 
             <Button
               className={classes.buttonSubmit}
@@ -114,15 +111,7 @@ const SignUpPage = () => {
               Submit
             </Button>
             <div className="mt-2"></div>
-            <Button
-              variant="contained"
-              color="secondary"
-              size="small"
-              onClick={clear}
-              fullWidth
-            >
-              Clear
-            </Button>
+
           </form>
         </Paper>
       </Container>

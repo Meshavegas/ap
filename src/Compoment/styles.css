@@ -1,0 +1,56 @@
+.school_icon {
+    width: 200px;
+    height: 200px;
+    background-color: aquamarine;
+    transform: translateX(10%) translateY(50%);
+    border-radius: 100%;
+    overflow: hidden;
+    object-fit: cover;
+    border: solid 5px yellow;
+}
+
+.school_icon img {
+    width: 100%;
+}
+
+.my_flexbox {
+    display: flex;
+    justify-content: space-around;
+}
+
+.my_flexbox .right {
+    width: 70%;
+}
+
+.tabview-demo .tabview-header-icon i,
+.tabview-demo .tabview-header-icon span {
+    vertical-align: middle;
+}
+
+.tabview-demo .tabview-header-icon span {
+    margin: 0 .5rem;
+}
+
+.tabview-demo .p-tabview p {
+    line-height: 1.5;
+    margin: 0;
+}
+
+.tabs_views {
+    margin-top: 100px;
+}
+
+.text_justify {
+    text-align: justify;
+}
+
+.card_content {
+    margin-top: 15px;
+}
+
+.right {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    padding: 12px;
+}
