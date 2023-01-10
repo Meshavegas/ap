@@ -54,12 +54,14 @@ const Carousel = () => {
             >
                 <ion-icon name="arrow-dropleft-circle"></ion-icon>
             </div>
+            <div className='grid grid-cols-1 gap-8 md:grid-cols-2 xl:grid-cols-3'>
             {cards
                .filter((f) => f.active === true)
                .sort((a, b) => (a.pos > b.pos ? 1 : b.pos > a.pos ? -1 : 0))
                .map((card, index) => (
                     <Card key={index} prop={card.text} />
-               ))}
+            ))}
+            </div>
             <div
                 className='text-xl md:text-5xl ml-5 cursor-pointer'
                 onClick={() => handleRightClick()}

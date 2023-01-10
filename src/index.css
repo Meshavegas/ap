@@ -18,11 +18,11 @@ code {
 
 .frame {
   height: 100vh;
-  z-index: 10;
+  z-index: 1;
   display: flex;
   justify-content: center;
   align-items: center;
-  position: relative;
+  
 
 }
 
@@ -39,7 +39,7 @@ code {
   justify-content: center;
   align-items: center;
   position: absolute;
-  z-index: 5;
+  z-index: 2;
 
 }
 

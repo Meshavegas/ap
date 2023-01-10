@@ -1,9 +1,10 @@
 import React from 'react';
 import illustration from '../assets/img.png'
 import students from '../assets/students1.jpg'
-import students1 from '../assets/students2.jpg'
+import students1 from '../assets/yellowgirl.jpg'
 import Carousel from './Carousel';
 import Etablissement from './Etablissement';
+import { Element } from 'react-scroll';
 
 
 export default function Corps() {
@@ -70,9 +71,11 @@ export default function Corps() {
             </section>
         </section>
         <section className='px-10 py-10 mt-5 xl:px-20'>
-            <h1 className='text-2xl font-semibold max-w-dm py-5 text-center'>
-                    Qui sommes nous ?
+            <h1 className='text-2xl font-semibold max-w-dm py-5 text-center' id='about'>
                     {/* syst-me d'authentification */}
+                <Element name='about'>
+                    Qui sommes nous ?
+                </Element>
             </h1>
             <div className='my-10 grid grid-cols-1 lg:grid-cols-2 gap-x-8'>
                 <img src={students} alt="etudiant" className='cover rounded-lg'/>
@@ -90,7 +93,7 @@ export default function Corps() {
             </div>
         </section>
         <section className='my-5 xl:px-20 xl:mb-20 '>
-            <h1 className='text-2xl mb-10 font-semibold max-w-dm py-5 text-center'>
+            <h1 className='text-2xl mb-10 font-semibold max-w-dm py-5 text-center' id='school'>
                     Etablissement
                     {/* syst-me d'authentification */}
             </h1>
@@ -101,8 +104,10 @@ export default function Corps() {
             </div>
         </section>
         <section className='px-10 py-20 mt-5 bg-gray-100'>
-            <h1 className='text-2xl font-semibold max-w-dm py-5 mb-10 text-center'>
+            <h1 className='text-2xl font-semibold max-w-dm py-5 mb-10 text-center' id='contact'>
+                <Element name='contact'>
                     Contacts
+                </Element>
                     {/* syst-me d'authentification */}
             </h1>
             <div className='grid grid-cols-1 md:grid-cols-2 md:gap-x-2 xl:px-10 '>
