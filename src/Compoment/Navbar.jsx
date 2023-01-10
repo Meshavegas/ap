@@ -12,7 +12,7 @@ import {
 export default function Navbar() {
   const [open, setOpen] = useState(false);
   return (
-    <nav className="bg-white max-w-full px-10 mt-5 md:mt-0 xl:mt-5 lg:mt-5">
+    <nav className="bg-white max-w-full px-10 mt-5 md:mt-0 xl:mt-5 lg:mt-5 z-10">
       <div className="flex items-center font-medium justify-between md:px-10">
         <div className="z-50 p-1 md:w-auto w-full flex justify-between">
         <Link to="/">
@@ -49,7 +49,7 @@ export default function Navbar() {
               duration-500 ${open ? "left-0" : "left-[-100%]"}
               `}
         >
-           <div className="grid grid-cols-1 gap-y-10 pl-3 mt-5 z-2000">
+           <div className="grid grid-cols-1 gap-y-10 pl-3 mt-5">
             <Link to="/">
               <li>Home</li>
             </Link>
