@@ -9,7 +9,7 @@ import { Card } from "primereact/card";
 import Navbar from "../Compoment/Navbar";
 import Footer from "../Compoment/Footer";
 // Drag and drop
-import { Draggable, Droppable } from "react-drag-and-drop";
+
 
 function SchoolDetailsHeader() {
   const imageCard = (image) => {
