@@ -113,7 +113,7 @@ const Cour = () => {
     <div style={{ display: "flex" }}>
       <DashBord />
       <div className="card m-4 ">
-        <TopBar />
+        
 
         <h1>{course.name}</h1>
         <h2>Leçons</h2>

@@ -1,69 +1,125 @@
 .form {
-    margin-top: 30px;
+  margin-top: 30px;
 }
 
 .paper {
-    padding: 12px;
-
+  padding: 12px;
 }
 
 TextField {
-    margin-top: 2px;
+  margin-top: 2px;
 }
 
 .school_icon {
-    width: 200px;
-    height: 200px;
-    background-color: aquamarine;
-    transform: translateX(10%) translateY(50%);
-    border-radius: 100%;
-    overflow: hidden;
-    object-fit: cover;
-    border: solid 5px yellow;
+  width: 200px;
+  height: 200px;
+  background-color: aquamarine;
+  transform: translateX(10%) translateY(50%);
+  border-radius: 100%;
+  overflow: hidden;
+  object-fit: cover;
+  border: solid 5px yellow;
 }
 
 .school_icon img {
-    width: 100%;
+  width: 100%;
 }
 
 .my_flexbox {
-    display: flex;
-    justify-content: space-around;
+  display: flex;
+  justify-content: space-around;
 }
 
 .my_flexbox .right {
-    width: 70%;
+  width: 70%;
 }
 
 .tabview-demo .tabview-header-icon i,
 .tabview-demo .tabview-header-icon span {
-    vertical-align: middle;
+  vertical-align: middle;
 }
 
 .tabview-demo .tabview-header-icon span {
-    margin: 0 .5rem;
+  margin: 0 0.5rem;
 }
 
 .tabview-demo .p-tabview p {
-    line-height: 1.5;
-    margin: 0;
+  line-height: 1.5;
+  margin: 0;
 }
 
 .tabs_views {
-    margin-top: 100px;
+  margin-top: 100px;
 }
 
 .text_justify {
-    text-align: justify;
+  text-align: justify;
 }
 
 .card_content {
-    margin-top: 15px;
+  margin-top: 15px;
 }
 
 .right {
-    display: flex;
-    align-items: flex-end;
-    justify-content: flex-end;
-    padding: 12px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  padding: 12px;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap");
+@import url("https://use.fontawesome.com/releases/v5.14.0/css/all.css");
+
+input,
+strong,
+p {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+video::-webkit-media-controls {
+  display: none !important;
+}
+
+.hidden {
+  display: none !important;
+}
+
+.width0 {
+  width: 0% !important;
+}
+
+.width-peer0 {
+  width: 45% !important;
+}
+
+.width-peer1 {
+  width: 45% !important;
+}
+.width-peer2 {
+  width: 30% !important;
+}
+.width-peer3 {
+  width: 28% !important;
+}
+.width-peer4 {
+  width: 28% !important;
+}
+.width-peer5 {
+  width: 28% !important;
+}
+.width-peer6 {
+  width: 25% !important;
+}
+
+.width-peer7 {
+  width: 25% !important;
+}
+.width-peer8 {
+  width: 25% !important;
+}
+
+.width-peer {
+  width: 20% !important;
 }
