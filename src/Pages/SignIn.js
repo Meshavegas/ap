@@ -13,6 +13,7 @@ import "../styles/index.css";
 import blackstudents from '../assets/blackstudents.jpg'
 import Navbar from "../Compoment/Navbar";
 import { Link } from "react-router-dom";
+import Footer from "../Compoment/Footer";
 
 //  gestion du post en cours
 const SignInPage = () => {
@@ -101,7 +102,7 @@ const SignInPage = () => {
             </div>
           </Grid>
         </Grid>
-
+        <Footer/>
       </Container>
     </div>
   );
