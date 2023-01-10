@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import logo from "../assets/logo.png";
 import Button from "./Button";
 import Navlink from "./Navlink";
+import { Link as Lien } from "react-scroll";
 import {
   Link,
   Route,
@@ -27,13 +28,17 @@ export default function Navbar() {
         </div>
         <ul className="md:flex hidden uppercase items-center gap-8 font-[Poppins]">
           <Link to="/">
-            <li>Home</li>
+            <li className="curor-pointer">Accueil</li>
           </Link>
-          <Link to="#about">
-            <li>About Us</li>
+          <Link to="#">
+            <Lien to="about" smooth={true} duration={700}>
+              <li className="curor-pointer">A Propos</li>
+            </Lien>
           </Link>
-          <Link to="/etablisement">
-            <li>Contacts</li>
+          <Link to="#">
+            <Lien to="contact" smooth={true} duration={700}>
+              <li>Contacts</li>
+            </Lien>
           </Link>
           <Link to="/etablisement">
             <li>Visiter l'etablissement</li>
