@@ -2,7 +2,7 @@ import React from 'react'
 import { useState } from 'react'
 import { TextField, Button } from '@material-ui/core'
 
-function CreateSchool() {
+function CreateClass() {
     const [PostData, setPostData] = useState({
         name: '',
         info: ''
@@ -43,4 +43,4 @@ function CreateSchool() {
     )
 }
 
-export default CreateSchool
+export default CreateClass

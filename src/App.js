@@ -24,6 +24,7 @@ import SchoolDetailsHeader from "./Pages/SchoolDetailsHeader";
 import Acceuil from "./Pages/Acceuil";
 import Etablissements from "./Pages/Etablissements";
 import CreateSchool from "./Pages/CreateSchool";
+import CreateClass from "./Pages/CreateClass";
 
 const App = () => {
   return (
@@ -42,6 +43,7 @@ const App = () => {
             <Route path="/schools" element={<SchoolDetailsHeader />} />
             <Route path="/etablisement" element={<Etablissements />} />
             <Route path="/createschool" element={<CreateSchool />} />
+            <Route path="/createclass" element={<CreateClass />} />
           </Route>
         </Routes>
       </BrowserRouter>
