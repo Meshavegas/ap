@@ -23,6 +23,7 @@ import SignUpPage from "./Pages/SignupPage";
 import SchoolDetailsHeader from "./Pages/SchoolDetailsHeader";
 import Acceuil from "./Pages/Acceuil";
 import Etablissements from "./Pages/Etablissements";
+import CreateSchool from "./Pages/CreateSchool";
 
 const App = () => {
   return (
@@ -40,6 +41,7 @@ const App = () => {
             <Route path="/singin" element={<SignUpPage />} />
             <Route path="/schools" element={<SchoolDetailsHeader />} />
             <Route path="/etablisement" element={<Etablissements />} />
+            <Route path="/createschool" element={<CreateSchool />} />
           </Route>
         </Routes>
       </BrowserRouter>
