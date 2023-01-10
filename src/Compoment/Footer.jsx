@@ -4,7 +4,7 @@ import logoW from '../assets/logoW.png'
 const Footer = () => {
     const [active, setActive] = useState(false);
     return (
-        <div className='p-20 py-10 pt-10 m-auto bg-black xl:pt-20 xl:pb-10'>
+        <div className='p-20 py-10 pt-10 m-auto bg-black xl:pt-20 xl:pb-10 absolute w-full'>
             <ul className='max-w-2xl grid grid-cols-1 sm:max-w-4xl sm:grid-cols-2 md:max-w-4xl md:grid-cols-3 lg:max-w-6xl lg:grid-cols-4 xl:max-w-7xl xl:grid-cols-5'>
                 <div className='mt-10 mb-15'>
                     <img src={logoW} alt="logo" className='w-10' />

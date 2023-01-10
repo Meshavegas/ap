@@ -2,6 +2,7 @@ import React from 'react';
 import illustration from '../assets/img.png'
 import students from '../assets/students1.jpg'
 import students1 from '../assets/students2.jpg'
+import Carousel from './Carousel';
 import Etablissement from './Etablissement';
 
 
@@ -25,7 +26,7 @@ export default function Corps() {
             </div>
         </section>
         <section className='px-10 py-7 mt-5 m-auto flex flex-col items-center bg-gray-50'>
-            <h1 className='text-xl font-semibold max-w-dm pt-5'>
+            <h1 className='text-2xl font-semibold max-w-dm pt-5'>
                     Quels cours nous proposons ?
                     {/* syst-me d'authentification */}
             </h1>
@@ -40,7 +41,7 @@ export default function Corps() {
                     <p className='text-sm text-gray-500 my-5'>
                         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui neque autem consectetur quae vero itaque iste, deserunt nemo nesciunt sit expedita eveniet velit doloribus modi odit! Molestiae ullam similique optio.
                     </p>
-                    <a href="">Learn more</a>
+                    <a href="#">Learn more</a>
                 </div>
                 <div className='p-10 rounded shadow-lg bg-white flex flex-col justify-center md:items-center w-full text-center'>
                     <div className='rounded-full border mb-5 p-5 border-red-400 text-red-400 text-3xl flex justify-center self-center'>
@@ -52,7 +53,7 @@ export default function Corps() {
                     <p className='text-sm text-gray-500 my-5'>
                         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui neque autem consectetur quae vero itaque iste, deserunt nemo nesciunt sit expedita eveniet velit doloribus modi odit! Molestiae ullam similique optio.
                     </p>
-                    <a href="">Learn more</a>
+                    <a href="#">Learn more</a>
                 </div>
                 <div className='p-10 rounded shadow-lg bg-white flex flex-col justify-center md:items-center w-full text-center'>
                     <div className='rounded-full border mb-5 p-4 border-blue-400 text-blue-400 text-3xl flex justify-center self-center'>
@@ -64,41 +65,43 @@ export default function Corps() {
                     <p className='text-sm text-gray-500 my-5'>
                         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui neque autem consectetur quae vero itaque iste, deserunt nemo nesciunt sit expedita eveniet velit doloribus modi odit! Molestiae ullam similique optio.
                     </p>
-                    <a href="">Learn more</a>
+                    <a href="3">Learn more</a>
                 </div>
             </section>
         </section>
         <section className='px-10 py-10 mt-5 xl:px-20'>
-            <h1 className='text-xl font-semibold max-w-dm py-5 text-center'>
+            <h1 className='text-2xl font-semibold max-w-dm py-5 text-center'>
                     Qui sommes nous ?
                     {/* syst-me d'authentification */}
             </h1>
             <div className='my-10 grid grid-cols-1 lg:grid-cols-2 gap-x-8'>
-                <img src={students} alt="photo etudiant" className='cover rounded-lg'/>
+                <img src={students} alt="etudiant" className='cover rounded-lg'/>
                 <div className='mt-5 lg:mt-0 lg:flex lg:flex-col lg:justify-center'>
                     <h1 className='text-lg font-semibold text-gray-600 '>Un groupe qui oeuvre pour éducation en Afrique </h1>
                     <p className='mt-3 text-gray-500'>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestiae quae repudiandae architecto, nam voluptate porro beatae quaerat officiis deserunt modi, rem aliquid dolorem minima facilis officia ipsum numquam inventore! Dolorum. </p>
                 </div>
             </div>
             <div className='my-10 grid grid-cols-1 lg:grid-cols-2 gap-x-8 reverse grid-reverse'>
-                <img src={students1} alt="photo etudiant" className='cover rounded-lg lg:order-1'/>
+                <img src={students1} alt="etudiant" className='cover rounded-lg lg:order-1'/>
                 <div className='mt-5 lg:mt-0 lg:flex lg:flex-col lg:justify-center'>
                     <h1 className='text-lg font-semibold text-gray-600'>{"Une initiative visant à digitaliser l'apprentissage"}</h1>
                     <p className='mt-3 text-gray-500 '>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestiae quae repudiandae architecto, nam voluptate porro beatae quaerat officiis deserunt modi, rem aliquid dolorem minima facilis officia ipsum numquam inventore! Dolorum. </p>
                 </div>
             </div>
         </section>
-        <section className='px-10 py-10 mt-5'>
-            <h1 className='text-xl font-semibold max-w-dm py-5 text-center'>
-                    Les établissements partenaires
+        <section className='my-5 xl:px-20 xl:mb-20 '>
+            <h1 className='text-2xl mb-10 font-semibold max-w-dm py-5 text-center'>
+                    Etablissement
                     {/* syst-me d'authentification */}
             </h1>
-           <div>
-            <Etablissement />
-           </div>
+            <div className=''>
+                <div className='flex justify-center items-center gap-2'>
+                    <Carousel />
+                </div>
+            </div>
         </section>
         <section className='px-10 py-20 mt-5 bg-gray-100'>
-            <h1 className='text-xl font-semibold max-w-dm py-5 mb-10 text-center'>
+            <h1 className='text-2xl font-semibold max-w-dm py-5 mb-10 text-center'>
                     Contacts
                     {/* syst-me d'authentification */}
             </h1>
