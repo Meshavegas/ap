@@ -7,12 +7,12 @@ import {
   Paper,
   Container,
   Card,
-  Link,
   Grid,
 } from "@material-ui/core";
 import "../styles/index.css";
 import blackstudents from '../assets/blackstudents.jpg'
 import Navbar from "../Compoment/Navbar";
+import { Link } from "react-router-dom";
 
 //  gestion du post en cours
 const SignInPage = () => {
@@ -26,10 +26,7 @@ const SignInPage = () => {
     e.preventDefault();
   };
 
-  const clear = () => {
-    // setCurrentId(null);
-    setPostData({});
-  };
+
   return (
     <div>
       <Navbar />
@@ -47,7 +44,14 @@ const SignInPage = () => {
                   className={`${classes.root} ${classes.form}`}
                   onSubmit={handleSubmit}
                 >
-                  <Typography variant="h6"> Sign In</Typography>
+                  <div>
+                    <Typography variant="h6"> Sign In</Typography>
+                  </div>
+
+                  <div className="icon_user">
+                    <br />
+                    <i className="pi pi-user"></i>
+                  </div>
 
                   <TextField
                     name="email"
@@ -73,9 +77,9 @@ const SignInPage = () => {
                     }}
                   />
 
-                  <Card elevation={2} fullWidth>
-                    <Link>Connect with google</Link>
-                  </Card>
+                  <div className="google_list">
+                    <Link className="link"> <i className="pi pi-google"></i> Connect with google</Link>
+                  </div>
                   <Link to="/singin" style={{ TextDecoder: "none" }}>
                     <h5>Crée un Compte</h5>
                   </Link>
@@ -91,15 +95,7 @@ const SignInPage = () => {
                     Submit
                   </Button>
                   <div className="mt-2"></div>
-                  <Button
-                    variant="contained"
-                    color="secondary"
-                    size="small"
-                    onClick={clear}
-                    fullWidth
-                  >
-                    Clear
-                  </Button>
+
                 </form>
               </Paper>
             </div>
