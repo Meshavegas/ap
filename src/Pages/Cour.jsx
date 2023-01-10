@@ -110,9 +110,9 @@ const Cour = () => {
   const { courseId } = useParams();
   const course = courses.find((c) => c.id == courseId);
   return (
-    <div className="flex">
+    <div style={{ display: "flex" }}>
       <DashBord />
-      <div className="card m-4 homeContainer">
+      <div className="card m-4 ">
         <TopBar />
 
         <h1>{course.name}</h1>
