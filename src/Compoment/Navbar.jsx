@@ -49,7 +49,7 @@ export default function Navbar() {
               duration-500 ${open ? "left-0" : "left-[-100%]"}
               `}
         >
-           <div className="grid grid-cols-1 gap-y-10 pl-3 mt-5">
+           <div className="grid grid-cols-1 gap-y-10 pl-3 mt-5 z-2000">
             <Link to="/">
               <li>Home</li>
             </Link>
